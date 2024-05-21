@@ -18,7 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div>
                         <h3>${countryInfo.name}</h3>
                         <img class="popup-img" src="${countryInfo.photo}" alt="${countryInfo.name}">
-                        <p><strong>Visa Requirement for Belgian Citizens:</strong> ${countryInfo.visaRequired ? 'Yes' : 'No'}</p>
+                        <p><strong>Visa Requirement for Belgian Citizens:</strong> ${countryInfo.visaRequired ? 'Yes' : 'No, <br> Youre good to go!'}</p>
+                        <p><strong> Passport validity: 90 Days </strong> </p>
+                        <p><strong>Safety: </strong> <div style=" width: 30px;
+                        height: 30px;
+                        background-color: green;
+                        border-radius: 50%;"  class="green-circle"></div> </p>
+                        
                     </div>
                     ${applyForVisaText}
                 `;
